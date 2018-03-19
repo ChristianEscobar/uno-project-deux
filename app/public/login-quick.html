@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>Uno Login</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"  media="screen,projection"/>
+
+    <link type="text/css" rel="stylesheet" href="assets/css/custom.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/login-quick.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="right">
+          <!--
+          <li><a class="waves-effect waves-light btn">Sign Up</a>
+            <div class="collapsible-body"><span>Coming Soon</span></div>
+          </li>
+          -->
+          <li>
+            <a id="login-btn" class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
+
+            <!-- Dropdown Structure -->
+            <!--
+            <ul id='user-input' class='dropdown-content'>
+              <li>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input placeholder="Enter your name" id="name" type="text" class="validate">
+                        <label for="first_name">Name</label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+            -->
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container top">
+
+      <div class="row">
+
+        <div class="col m2 l3">
+          <!-- This is a spacer -->
+        </div>
+
+        <div class="col m8 s12 l6">
+            <!-- <img class="responsive-img" src="assets/images/Uno_Logo2.png"> -->
+        </div>
+
+        <div class="col m2 l3">
+          <!-- This is a spacer -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Modals -->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal">
+      <div class="modal-content">
+        <div class="row">
+          <form class="col s12 m6 l6">
+            <div class="row">
+              <div class="input-field col s8">
+                <i class="material-icons prefix">account_circle</i>
+                <input placeholder="Enter your name" id="name" type="text" class="validate" required="true" aria-required="true">
+                <label for="first_name">Player Name</label>
+                <span id="user-messages"></span>
+              </div>
+            </div>
+          </form>
+          <div class="col s12 m6 l6" id="wait_indicator">
+            <!-- Wait indicator will show here when needed. -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</button>
+        <button id="play-btn" class="waves-effect waves-green btn-flat">Play</button>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script type="text/javascript" src="assets/js/login-quick.js"></script>
+  </body>
+
+</html>

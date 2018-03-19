@@ -1,0 +1,94 @@
+body {
+  background-color: black;
+  background-image: url("../images/Uno_Logo2.png");
+  background-size: 500px;
+  background-position: 50% -40%;
+  background-repeat: no-repeat;
+
+}
+
+body.gameboard {
+  background-color: black;
+  background-image: url("../images/Uno_Logo2.png");
+  background-size: 175px;
+  background-position: 50% 53%;
+  background-repeat: no-repeat;
+
+}
+
+nav {
+  background-color: black;
+}
+
+.top {
+  margin-top: 75px;
+}
+
+/*
+.guide1 {
+  border: 1px solid red;
+}
+
+.guide2 {
+  border: 1px solid blue;
+}
+
+.guide3 {
+  border: 1px solid green;
+}
+
+.guide4 {
+  border: 1px solid yellow;
+}
+*/
+
+.card-display {
+  width: 100px;
+  
+}
+
+#discard img.responsive-img.card-display {
+    position: absolute;
+}
+
+.card_container{
+	cursor: pointer;
+	position: relative;
+  height: 2px;
+
+}
+
+.card_container:nth-child(odd) {
+    border: 0 transparent;
+    height: 0;
+}
+
+.card_front, .card_back {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	cursor: pointer;
+	border: thin solid #ccc;
+	border-radius: 5px;
+	background-color: white;
+  top: -2px;
+  left: 60px;
+  height: 100%;
+}
+
+.card_front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.card_back {
+	transform: rotateY(180deg);
+}
+
+h5 {
+  color: white;
+}
+
+#wait_text {
+  color: black;
+}

@@ -1,0 +1,37 @@
+var dummyDB = [
+    {
+        "id": 15,
+        "createdAt": "2018-03-14T04:58:03.000Z",
+        "updatedAt": "2018-03-14T04:58:03.000Z",
+        "cardId": "assets/images/cards/small/red_1.png",
+				"cardBack": "assets/images/cards/small/card_back_alt.png"
+    },
+    {
+        "id": 16,
+        "createdAt": "2018-03-14T04:58:03.000Z",
+        "updatedAt": "2018-03-14T04:58:03.000Z",
+        "cardId": "assets/images/cards/small/red_2.png",
+				"cardBack": "assets/images/cards/small/card_back_alt.png"
+    },
+    {
+        "id": 17,
+        "createdAt": "2018-03-14T04:58:03.000Z",
+        "updatedAt": "2018-03-14T04:58:03.000Z",
+        "cardId": "assets/images/cards/small/red_3.png",
+				"cardBack": "assets/images/cards/small/card_back_alt.png"
+    },
+    {
+        "id": 18,
+        "createdAt": "2018-03-14T04:58:03.000Z",
+        "updatedAt": "2018-03-14T04:58:03.000Z",
+        "cardId": "assets/images/cards/small/red_4.png",
+				"cardBack": "assets/images/cards/small/card_back_alt.png"
+    },
+    {
+        "id": 19,
+        "createdAt": "2018-03-14T04:58:03.000Z",
+        "updatedAt": "2018-03-14T04:58:03.000Z",
+        "cardId": "assets/images/cards/small/red_5.png",
+				"cardBack": "assets/images/cards/small/card_back_alt.png"
+    }
+]

@@ -1,0 +1,35 @@
+{
+  "name": "uno-project",
+  "version": "1.0.0",
+  "description": "An UNO game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xtiane/uno-project.git"
+  },
+  "keywords": [
+    "UNO"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xtiane/uno-project/issues"
+  },
+  "homepage": "https://github.com/xtiane/uno-project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dragula": "^3.7.2",
+    "enum": "^2.5.0",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.2",
+    "sequelize": "^4.37.0",
+    "sequelize-cli": "^4.0.0",
+    "shuffle": "^0.2.2"
+  }
+}

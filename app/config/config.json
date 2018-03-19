@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "uno_db_seq",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "uno_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "sxse9c9q1azljwuc",
+    "password": "g0klk7hae25a3lsd",
+    "database": "jb54vcnt7rflqt41",
+    "host": "sulnwdk5uwjw1r2k.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}
