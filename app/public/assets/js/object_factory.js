@@ -1,3 +1,4 @@
+"use strict"
 
 ;(function(window){
 	// Placing Deck in Div

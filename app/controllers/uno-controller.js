@@ -17,12 +17,14 @@ const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
 
 // Loads the login page
+/*
 router.get("/", (req, res) => {
 	res.redirect("/login.html");
 });
+*/
 
 // Quick login
-router.get("/login-quick", (req, res) => {
+router.get("/", (req, res) => {
 	res.redirect("/login-quick.html");
 });
 
@@ -556,6 +558,7 @@ router.get("/game/test/:cardId", (req, res) => {
 	})
 });
 
+// Gets the hand for the specified player
 router.get("/game/hand/:playerId", (req, res) => {
 	console.log(req.path);
 
