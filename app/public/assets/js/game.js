@@ -11,15 +11,17 @@ const startGameURL = "/game/start";
 const dealHand = function(playerHand) {
 
 	playerHand.forEach( element => {
+		console.log(element);
+
 		let imgTag = $("<img></img>");
 
 		imgTag.addClass("responsive-img card-display");
 
-		imgTag.attr("src", element.smallImage);
+		imgTag.attr("src", "assets/images/cards/small/" + element.card[0].smallImage);
 
-		imgTag.attr("card-id", element.id);
+		imgTag.attr("card-id", element.card[0].id);
 
-		$("#hand").append(imgTag);
+		$("#hand-div").append(imgTag);
 	});
 };	
 
@@ -37,33 +39,36 @@ $(document).ready(function(event) {
 			return $.get(playerHandURL)
 		})
 		.then( playerHand => {
-			console.log(playerHand);
+			console.log(playerHand.hand);
 
-
-
-			const currentHand = new HandPlacement("hand", {object: "hand", data: playerHand.hand});
+			dealHand(playerHand.hand);
 		})
 		.catch( error => console.error(error));
 	} else {
-		isGameReady(deckURL)
+		isGameReady()
 		.then( gameReadyResult => {
-			return $.get(playerHandURL) 
-		})
-		.then( playerHand => {
-			console.log(playerHand);
+			console.log("isGameReady returned");
 		})
 		.catch( error => console.error(error));
 	}
 });
 
+// For now, this function will take care of populating player 2's hand
 function isGameReady() {
-	return $.get(deckURL)
+	console.log("About to call", deckURL);
+
+	$.get(deckURL)
 	.then( deck => {
+		console.log("Return", deck);
+
 		// Hard coding initial number of cards expected to be in the deck at the start of a game.
-		if(deck.length > 93) {
+		if(deck.length >= 93) {
 			console.log("Game is ready.");
 
-			return Promise.resolve(true);
+			$.get(playerHandURL)
+			.then( playerHand => {
+				dealHand(playerHand.hand);
+			})
 
 		} else {
 			setTimeout(isGameReady(), 1000);
